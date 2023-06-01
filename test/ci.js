@@ -30,7 +30,7 @@ async function test () {
   const chunk = await new Promise((resolve, reject) => {
     const timer = setTimeout(() => reject(new Error('timeout')), 30000)
     const req = http.get(
-      'http://localhost:3000/youtube.com/?v=s-mOy8VUEBk',
+      'http://localhost:3000/youtube.com/watch?v=zCx84nEZ7os',
       res => {
         res.on('error', reject)
         if (res.statusCode > 299) {
